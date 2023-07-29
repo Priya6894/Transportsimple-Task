@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer the Question</title>
+</head>
+<body>
+    <h1>Answer the Question</h1>
+    <p>{{ question.content }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="content" required></textarea><br>
+        <input type="submit" value="Submit Answer">
+    </form>
+</body>
+</html>
